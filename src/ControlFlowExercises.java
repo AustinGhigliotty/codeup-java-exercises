@@ -1,10 +1,15 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        for (int i = 5; i <= 15; i++) {
-            System.out.println(i);
-        }
-        for (long i = 2; i < 1000000; i=i*i) {
-            System.out.println(i);
+        for (int i = 1; i <= 100; i++) {
+            if (i % 15 == 0) {
+                System.out.println("fizzbuzz");
+            } else if (i % 5 == 0) {
+                System.out.println("buzz");
+            } else if (i % 3 == 0) {
+                System.out.println("fizz");
+            } else {
+                System.out.println(i);
+            }
         }
     }
 }
