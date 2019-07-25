@@ -35,6 +35,7 @@ public class HelloWorld {
         System.out.println(word1);
         System.out.println(word2);
         System.out.println(word3);
+        scan.nextLine();
         System.out.print("Now enter a sentence: ");
         String sentence = scan.nextLine();
         System.out.println("You typed: " + sentence);
@@ -44,14 +45,11 @@ public class HelloWorld {
         int length = scan.nextInt();
         System.out.print("Enter height (in feet): ");
         int height = scan.nextInt();
-        int perimeter = (width * 2) + (length * 2);
-        int area = width * length;
-        int volume = width * length * height;
-        System.out.printf("The perimeter is %d ft", perimeter);
+        System.out.printf("The perimeter is %d ft", (width * 2) + (length * 2));
         System.out.println();
-        System.out.printf("The area is %d ft^2", area);
+        System.out.printf("The area is %d ft^2", width * length);
         System.out.println();
-        System.out.printf("The volume is %d ft^3", volume);
+        System.out.printf("The volume is %d ft^3", width * length * height);
         System.out.println();
     }
 }
