@@ -3,42 +3,42 @@ import java.util.Scanner;
 public class MethodsExercises {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-//        System.out.println("For add - Type a number: ");
-//        int first = scan.nextInt();
-//        System.out.println("Type another number: ");
-//        int second = scan.nextInt();
-//        add(first, second);
-//
-//        System.out.println("For subtract - Type a number: ");
-//        first = scan.nextInt();
-//        System.out.println("Type another number: ");
-//        second = scan.nextInt();
-//        subtract(first, second);
-//
-//        System.out.println("For multiply - Type a number: ");
-//        first = scan.nextInt();
-//        System.out.println("Type another number: ");
-//        second = scan.nextInt();
-//        multiply(first, second);
-//
-//        System.out.println("For divide - Type a number: ");
-//        first = scan.nextInt();
-//        System.out.println("Type another number (don't do 0): ");
-//        second = scan.nextInt();
-//        divide(first, second);
-//
-//        System.out.println("For modulus - Type a number: ");
-//        first = scan.nextInt();
-//        System.out.println("Type another number: ");
-//        second = scan.nextInt();
-//        modulus(first, second);
-//
-////        System.out.print("Enter a number between 1 and 10: ");
-////        int userInput = getInteger(1, 10);
-//
-//        System.out.print("Enter a number between 1 and 13: ");
-//        int fact = scan.nextInt();
-//        factorial(fact);
+        System.out.println("For add - Type a number: ");
+        int first = scan.nextInt();
+        System.out.println("Type another number: ");
+        int second = scan.nextInt();
+        add(first, second);
+
+        System.out.println("For subtract - Type a number: ");
+        first = scan.nextInt();
+        System.out.println("Type another number: ");
+        second = scan.nextInt();
+        subtract(first, second);
+
+        System.out.println("For multiply - Type a number: ");
+        first = scan.nextInt();
+        System.out.println("Type another number: ");
+        second = scan.nextInt();
+        multiply(first, second);
+
+        System.out.println("For divide - Type a number: ");
+        first = scan.nextInt();
+        System.out.println("Type another number (don't do 0): ");
+        second = scan.nextInt();
+        divide(first, second);
+
+        System.out.println("For modulus - Type a number: ");
+        first = scan.nextInt();
+        System.out.println("Type another number: ");
+        second = scan.nextInt();
+        modulus(first, second);
+
+//        System.out.print("Enter a number between 1 and 10: ");
+//        int userInput = getInteger(1, 10);
+
+        System.out.print("Enter a number between 1 and 13: ");
+        int fact = scan.nextInt();
+        factorial(fact);
 
         System.out.print("How many sides do you want on the dice? ");
         int diceSides = scan.nextInt();
