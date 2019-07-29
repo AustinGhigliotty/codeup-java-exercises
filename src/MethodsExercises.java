@@ -32,6 +32,13 @@ public class MethodsExercises {
         System.out.println("Type another number: ");
         second = scan.nextInt();
         modulus(first, second);
+
+//        System.out.print("Enter a number between 1 and 10: ");
+//        int userInput = getInteger(1, 10);
+
+        System.out.print("Enter a number between 1 and 13: ");
+        int fact = scan.nextInt();
+        factorial(fact);
     }
 
     private static int add(int a, int b) {
@@ -62,5 +69,19 @@ public class MethodsExercises {
         System.out.printf("The result is %d", a%b);
         System.out.println();
         return a % b;
+    }
+//    private static int getInteger(int min, int max) {
+//        if (user) {
+//
+//        }
+//        return;
+//    }
+    private static int factorial(int a) {
+        int answer = 1;
+        for (int i = a; i > 0; i--) {
+            answer *= i;
+        }
+        System.out.println(answer);
+        return answer;
     }
 }
