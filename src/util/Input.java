@@ -1,5 +1,6 @@
 package util;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -22,21 +23,50 @@ public class Input {
     int getInt(int min, int max){
         do {
             System.out.println("Enter a number between " + min + " and " + max + ": ");
-            int answer = scanner.nextInt();
-            if (answer >= min && answer <= max) {
-                return answer;
+            try {
+                int answer = Integer.valueOf(scanner.nextLine());
+                if (answer >= min && answer <= max) {
+                    return answer;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("That's not a number.");
             }
         } while (true);
     }
     int getInt(){
-        System.out.println("Enter a number: ");
-        return scanner.nextInt();
+        do {
+            System.out.println("Enter a number: ");
+            try {
+                return Integer.valueOf(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Enter an actual number");
+            }
+        } while (true);
     }
     public double getDouble(double min, double max){
-        return scanner.nextDouble();
+//        return scanner.nextDouble();
+        do {
+            System.out.println("Enter a double between " + min + " and " + max + ": ");
+            try {
+                double answer = Double.valueOf(scanner.nextLine());
+                if (answer >= min && answer <= max) {
+                    return answer;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("That's not a number.");
+            }
+        } while (true);
     }
     public double getDouble(){
-        return scanner.nextDouble();
+//        return scanner.nextDouble();
+        do {
+            System.out.println("Enter a double: ");
+            try {
+                return Double.valueOf(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("That's not a number.");
+            }
+        } while (true);
     }
 
     public static void main(String[] args) {
@@ -45,6 +75,10 @@ public class Input {
         System.out.println(input.yesNo());
         System.out.println(input.getInt(1,10));
         System.out.println(input.getInt());
+        System.out.println(input.getDouble(0.1,9.9));
+        System.out.println(input.getDouble());
         System.out.println(input.getString());
     }
+//    Integer.valueOf(String s);
+//    Double.valueOf(String s);
 }
